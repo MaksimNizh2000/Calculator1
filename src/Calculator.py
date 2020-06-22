@@ -12,7 +12,7 @@ class Calculator:
         return self.result
 
     def subtract(self, a, b):
-        self.result = a - b
+        self.result = b - a
         return self.result
 
     def multiply(self, a, b):
