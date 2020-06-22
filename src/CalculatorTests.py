@@ -1,6 +1,7 @@
 import unittest
 from Calculator import Calculator
 
+
 class MyTestCase(unittest.TestCase):
     def test_instantiate_calculator(self):
         calculator = Calculator()
@@ -14,10 +15,10 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.subtract(1, 1), 0)
 
-    def test_results_property(self):
+    def test_results_property_calculator(self):
         calculator = Calculator()
-        calculator.add(2, 1)
-        self.assertEqual(calculator.result, 3)
+        self.assertEqual(calculator.result, 4)
+
 
 if __name__ == '__main__':
     unittest.main()
