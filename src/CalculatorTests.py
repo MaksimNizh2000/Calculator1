@@ -7,9 +7,9 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertIsInstance(calculator, Calculator)
 
-    def test_addition(self):
+    def test_add_method_calculator(self):
         calculator = Calculator()
-        self.assertEqual(calculator.add(1, 1), 2)
+        self.assertEqual(calculator.add(2, 2), 4)
 
     def test_subtraction(self):
         calculator = Calculator()
