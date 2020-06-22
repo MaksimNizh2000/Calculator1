@@ -1,5 +1,6 @@
 import math
 
+
 class Calculator:
     result = 0
 
@@ -20,7 +21,7 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = a / b
+        self.result = format(b / a, '.7f')
         return self.result
 
     def square(self, a):
@@ -28,5 +29,5 @@ class Calculator:
         return self.result
 
     def square_root(self, a):
-        self.result = math.sqrt(a)
+        self.result = format(math.sqrt(a), '.7f')
         return self.result
